@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-        SEMGREP_RULES:
-    p/nginx
-    p/ci
-    test.yml
+      SEMGREP_RULES:
+        p/nginx
+        p/ci
+        test.yml
     container:
       image: returntocorp/semgrep
     steps:
